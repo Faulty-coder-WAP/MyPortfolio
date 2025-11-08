@@ -16,18 +16,18 @@
 /* body styling */
 body {
     /* background-color: var(--background-color); */
-    background: radial-gradient(ellipse at bottom, #35444e, #253037,#1a2227);
+    background: radial-gradient(ellipse at bottom, #35444e, #253037, #1a2227);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--text);
     height: 100vh;
     width: 100vw;
     position: relative;
-    overflow: hidden;
     z-index: 1;
+    overflow: auto;
 }
 
-/* .header-class , .mainclass, .dwd-name{
-    border: 1px solid red;
-} */
 /* name and download styling */
 .dwd-name {
     margin-top: 1rem;
@@ -121,6 +121,7 @@ a {
 /* styling about */
 .mainclass {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1.7rem;
@@ -130,25 +131,25 @@ a {
 
 .about-me {
     text-align: center;
-    width: 60ch;
+    width: 100%;
+    height: auto;
     word-spacing: 3px;
 }
 
-.about-me .myinfo {
-    text-align: start;
-}
-
 .about {
+    text-align: center;
     font-family: poppins, sans-serif;
-    font-weight: 700;
     font-size: 2.3rem;
 }
 
 .myinfo {
+    display: inline-block;
+    max-width: 60ch;
     margin-top: 0.5rem;
     font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
+    text-align: justify;
 }
 
 /* styling ConnectSocials */
@@ -188,3 +189,107 @@ a {
     border-radius: 50%;
     transition: .3s linear;
 }
+
+/*Styling Skills Section*/
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.my-skills {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.skills-heading
+{
+text-align: center;
+    font-family: poppins, sans-serif;
+    font-size: 2.3rem;
+}
+
+.text-skill{
+    font-family: poppins,sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.html {
+    height: 70px;
+
+
+}
+
+.css {
+    height: 70px;
+
+}
+
+.javascript {
+    height: 73px;
+
+}
+
+.react-js {
+    height: 60px;
+
+}
+
+.java {
+    height: 60px;
+
+}
+
+.springboot {
+    height: 60px;
+    width: px;
+}
+
+.sql {
+    height: 60px;
+
+}
+
+.skill-grid {
+    margin-top: 1rem;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: repeat(3, 1.5fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header-class,
+.mainclass,
+.dwd-name,
+section {
+    border: 1px solid red;
+} */

@@ -40,19 +40,24 @@
 
 /* stars Moving styling */
 .stars {
-    position: absolute;
+    position: fixed;
+     pointer-events: none;
+     top: 0;
+     left: 0;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     margin-top: 0;
     display: block;
-    transition: 0.3 linear;
+    transition: 1 linear;
     margin: 0;
     padding: 0;
-    transition: 1s ease-in-out;
+
 }
 
 .stars {
     background: url("./images/stars.png") repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
     z-index: -1;
     filter: drop-shadow(0 0 1px #fff);
     -webkit-mask: radial-gradient(circle 30px, black 70%, transparent 100%) 0 0 / 100px 100px repeat;

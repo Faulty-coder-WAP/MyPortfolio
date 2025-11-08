@@ -1,5 +1,12 @@
-@media (max-width:785px)
- {
+@media (max-width:890px) {
+
+    body {
+
+        background-size: 100% auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
     .header-class {
         display: flex;
         flex-direction: column;
@@ -59,11 +66,31 @@
     .socials a {
         margin-left: 0;
         height: 30px;
-    width: 30px;
-        
+        width: 30px;
+
     }
-    .socials a i{
+
+    .socials a i {
         font-size: 20px;
     }
 
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr);
+
+    }
+
+    .skill-flex img {
+        width: 56px;
+        height: 56px;
+        /* force square box */
+        object-fit: contain;
+        /* prevent stretching/cropping (fixes Spring Boot) */
+        display: block;
+    }
+
+    .skill-flex span {
+        font-size: .8rem;
+        line-height: 1.1;
+    }
 }
