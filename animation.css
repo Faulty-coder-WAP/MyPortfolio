@@ -1,0 +1,68 @@
+/* */
+
+/*  animation for gt and lt */
+.la,
+.ra {
+    opacity: 0;
+    animation: arrow-blink 1.5s linear infinite alternate;
+    transition: .5sec;
+}
+
+@keyframes arrow-blink {
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* li hover styling */
+.listofservices li a:hover {
+    color: var(--buttons-style);
+}
+
+/* button hover styling */
+
+.btn-res:hover {
+    background-color: transparent;
+    color: var(--buttons-style);
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--buttons-style);
+}
+
+/* Social icons hover styling */
+
+.socials a:hover {
+    transform: scale(1.01);
+    color: var(--buttons-style);
+    box-shadow: 0 0 30px var(--buttons-style);
+}
+
+.stars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    display: block;
+    transition: 0.3 linear;
+}
+
+.stars {
+    background: url("./images/stars.png") repeat top center;
+    z-index: -1;
+    animation: stars-twlinking 200s linear infinite alternate;
+}
+
+
+@keyframes stars-twlinking {
+    from {
+        opacity: 0.3;
+        background-position: 0 0;
+    }
+
+    to {
+        opacity: 1;
+        background-position: -10000px 5000px;
+    }
+
+}

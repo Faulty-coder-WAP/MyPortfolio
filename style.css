@@ -1,0 +1,190 @@
+/* variable declaring */
+:root {
+    --background-color: #253037;
+    --text: #E9F0FB;
+    --buttons-style: #A33B45;
+    --hover-btn-color: #c54a56;
+}
+
+/* */
+/* removing default padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body styling */
+body {
+    /* background-color: var(--background-color); */
+    background: radial-gradient(ellipse at bottom, #35444e, #253037,#1a2227);
+    color: var(--text);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* .header-class , .mainclass, .dwd-name{
+    border: 1px solid red;
+} */
+/* name and download styling */
+.dwd-name {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/*  header class*/
+.header-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    height: auto;
+    width: auto;
+}
+
+.myportfolio,
+.navbar {
+    margin-top: .3rem;
+}
+
+/* myportfolio heading style */
+.myportfolio {
+    font-family: "Playwrite HU", cursive;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* default list styles removing*/
+.listofservices,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--text);
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+/* ul styling */
+.listofservices {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.listofservices li a:active {
+    color: var(--hover-btn-color);
+    border: none;
+    outline: none;
+}
+
+/* my name styling */
+.mynameclass {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* resume button styling */
+
+
+.downloadtnclass {
+    margin-top: 1rem;
+    text-align: center;
+    height: 1.5rem;
+}
+
+.btn-res {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .25em .3em;
+    border-radius: 20px;
+    background-color: var(--buttons-style);
+    color: var(--text);
+    box-shadow: 0 0 10px var(--buttons-style);
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+/* styling about */
+.mainclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.7rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.about-me {
+    text-align: center;
+    width: 60ch;
+    word-spacing: 3px;
+}
+
+.about-me .myinfo {
+    text-align: start;
+}
+
+.about {
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.myinfo {
+    margin-top: 0.5rem;
+    font-family: arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* styling ConnectSocials */
+
+.connect-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.connectmetext {
+    font-family: poppins, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.socials {
+    margin-left: 1.2rem;
+}
+
+.socials a i {
+    font-size: 26px;
+}
+
+.socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    color: var(--text);
+    border: 1px solid var(--buttons-style);
+    border-radius: 50%;
+    transition: .3s linear;
+}
