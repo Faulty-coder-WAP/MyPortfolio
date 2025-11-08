@@ -38,18 +38,24 @@
     box-shadow: 0 0 30px var(--buttons-style);
 }
 
+/* stars Moving styling */
 .stars {
     position: absolute;
     height: 100%;
     width: 100%;
-    inset: 0;
+    margin-top: 0;
     display: block;
     transition: 0.3 linear;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease-in-out;
 }
 
 .stars {
-    background:  url("./images/stars.png") repeat top center;
+    background: url("./images/stars.png") repeat top center;
     z-index: -1;
+    filter: drop-shadow(0 0 1px #fff);
+    -webkit-mask: radial-gradient(circle 30px, black 70%, transparent 100%) 0 0 / 100px 100px repeat;
     animation: stars-twlinking 200s linear infinite alternate;
 }
 
@@ -58,11 +64,13 @@
     from {
         opacity: 0.3;
         background-position: 0 0;
+        -webkit-mask-position: 0 0;
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
         background-position: -10000px 5000px;
+        -webkit-mask-position: 100px 100px;
     }
 
 }
