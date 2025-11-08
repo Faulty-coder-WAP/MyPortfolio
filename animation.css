@@ -48,7 +48,7 @@
 }
 
 .stars {
-    background: url("./images/stars.png") repeat top center;
+    background:  url("./images/stars.png") repeat top center;
     z-index: -1;
     animation: stars-twlinking 200s linear infinite alternate;
 }
